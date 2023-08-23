@@ -1,0 +1,591 @@
+@font-face {
+   font-display: swap;
+   font-family: 'Libre Baskerville';
+   font-style: normal;
+   font-weight: 400;
+   src: url('./fonts/libre-baskerville-400.woff2') format('woff2');
+}
+
+@font-face {
+   font-display: swap;
+   font-family: 'Libre Baskerville';
+   font-style: normal;
+   font-weight: 700;
+   src: url('./fonts/libre-baskerville-700.woff2') format('woff2');
+}
+
+*{
+   box-sizing: border-box;
+}
+
+html{
+   height: 100%;
+}
+
+body{
+   margin: 0;
+   font-family: "Libre Baskerville", "Arial", sans-serif;
+   font-weight: 700;
+   height: 100%;
+}
+
+.container{
+   width: 1390px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.header-box{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #e5e5e5;
+   padding-top: 40px;
+   padding-bottom: 40px;
+}
+
+.header-link{
+   text-decoration: none;
+   color: #7d7d7d;
+   font-size: 12px;
+   font-weight: 700;
+   letter-spacing: 2.571px;
+   margin: 0;
+}
+
+.site-main{
+   margin-top: 40px;
+}
+
+.hero-box__list{
+   display: grid;
+   grid-template: repeat(7, 200px) / repeat(4, 310px);
+   list-style: none;
+   justify-content: space-between;
+   padding: 0;
+   margin: 0;
+}
+
+.hero-box__item{
+   position: relative;
+   background-image: url("images/Mask.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 84px 32px 33px;
+}
+
+.hero-box__title-box{
+   position: absolute;
+   bottom: 33px;
+}
+
+.hero-box__title{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-two{
+   padding: 84px 32px 33px;
+   background-image: url("images/Masktwo.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   grid-row: 1 / 3;
+   grid-column: 2 / 3;
+   margin-bottom: 40px;
+}
+
+.hero-box__title-box-two{
+   position: absolute;
+   bottom: 33px;
+}
+
+.hero-box__title-box-two{
+   position: absolute;
+   bottom: 33px;
+}
+
+.hero-box__title-two{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-two{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-three{
+   padding: 84px 32px 33px;
+   background-image: url("images/Henri\ Rousseau.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+   
+.hero-box__title-box-three{
+   position: absolute;
+   bottom: 33px;
+}
+
+.hero-box__title-three{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-three{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-four{
+   padding: 84px 32px 33px;
+   background-image: url("images/Artemisia\ Gentileschi.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   margin-bottom: 40px;
+   grid-row: 1 / 3;
+   grid-column: 4 / 5;
+}
+   
+.hero-box__title-box-four{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-four{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-four{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-five{
+   padding: 84px 32px 33px;
+   background-image: url("images/Rembrandt.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   grid-row: 2 / 4;
+   margin-top: 40px;
+}
+
+.hero-box__title-box-five{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-five{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-five{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-six{
+   padding: 84px 32px 33px;
+   background-image: url("images/Vincent\ van\ Gogh.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   grid-row: 2 / 5;
+   grid-column: 3 / 4;
+   margin-top: 40px;
+}
+
+.hero-box__title-box-six{
+   position: absolute;
+   bottom: 33px;
+   width: 160px;
+}
+
+.hero-box__title-six{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-six{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-seven{
+   position: relative;
+   background-image: url("images/Hokusai.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 84px 32px 33px;
+}
+
+.hero-box__title-box-seven{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-seven{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-seven{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-eight{
+   position: relative;
+   background-image: url("images/Henri\ Rousseautwo.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 84px 32px 33px;
+}
+
+.hero-box__title-box-eight{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-eight{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-eight{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-nine{
+   padding: 84px 32px 33px;
+   background-image: url("images/Leonardo\ da\ Vinci.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   grid-row: 4 / 7;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+
+.hero-box__title-box-nine{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-nine{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-nine{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-ten{
+   padding: 84px 32px 33px;
+   background-image: url("images/Vincent\ van\ Goghtwo.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   grid-row: 4 / 6;
+   grid-column: 2 / 3;
+   margin-top: 40px;
+}
+
+.hero-box__title-box-ten{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-ten{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-ten{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-eleven{
+   position: relative;
+   background-image: url("images/Paul\ Cézanne.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 84px 32px 33px;
+   margin-top: 40px;
+}
+
+.hero-box__title-box-eleven{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-eleven{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-eleven{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-twelve{
+   padding: 84px 32px 33px;
+   background-image: url("images/Leonardo\ da\ Vincitwo.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   grid-row: 5 / 7;
+   grid-column: 3 / 4;
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+
+.hero-box__title-box-twelve{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-twelve{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-twelve{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-thirteen{
+   padding: 84px 32px 33px;
+   background-image: url("images/Masktwo.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   grid-row: 6 / 8;
+   grid-column: 2 / 3;
+   margin-top: 40px;
+}
+
+.hero-box__title-box-thirteen{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-thirteen{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-thirteen{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-thirteen{
+   padding: 84px 32px 33px;
+   background-image: url("images/Jan\ van\ Eycktwo.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   margin-top: 40px;
+}
+
+.hero-box__title-box-thirteen{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-thirteen{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-thirteen{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-fourteen{
+   padding: 84px 32px 33px;
+   background-image: url("images/Jean-Honoré\ Fragonard.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   grid-row: 5 / 8;
+   grid-column: 4 / 5;
+   margin-top: 40px;
+}
+
+.hero-box__title-box-fourteen{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-fourteen{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-fourteen{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-fifteen{
+   position: relative;
+   background-image: url("images/Edward\ Hopper.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 84px 32px 33px;
+}
+
+.hero-box__title-box-fifteen{
+   position: absolute;
+   bottom: 33px;
+   width: 236px;
+}
+
+.hero-box__title-fifteen{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-fifteen{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
+
+.hero-box__item-sixteen{
+   position: relative;
+   background-image: url("images/Henri\ Rousseautwo.svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 84px 32px 33px;
+}
+
+.hero-box__title-box-sixteen{
+   position: absolute;
+   bottom: 33px;
+   width: 246px;
+}
+
+.hero-box__title-sixteen{
+   color: #fff;
+   font-size: 24px;
+   font-weight: 700;
+   margin-top: 0;
+   margin-bottom: 5px;
+}
+
+.hero-box__desc-sixteen{
+   margin: 0;
+   color: #fff;
+   font-size: 13px;
+   font-weight: 400;
+}
